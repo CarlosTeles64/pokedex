@@ -1,0 +1,58 @@
+.search-section .search-bar{
+  display: flex;
+}
+.search-bar input {
+  flex: 1;
+  border-radius: 0 50px 50px 0;
+}
+.search-bar .search-icon {
+  font-size: 1rem;
+  border-radius: 50px 0 0 50px;
+}
+.search-bar .search-icon, .search-bar input {
+  background: #F6F6F6;
+  padding: .8rem;
+}
+.cards-section {
+  margin-top: 2rem;
+}
+.cards-section .card {
+  padding: 1.5rem 1rem;
+  background: #F6F6F6;
+
+  position: relative;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  overflow: hidden;
+}
+.card a {
+  color: white;
+  font-weight: bold;
+}
+.card::before {
+  border-radius: 50%;
+
+  top: -38px;
+  left: -38px;
+
+  background: #fff;
+}
+.card::after {
+  background: url(./src/pokeball-bg.svg);
+
+  top: -1px;
+  right: -8px;
+}
+.card::before, .card::after {
+  content: '';
+
+  width: 70px;
+  height: 70px;
+
+  opacity: .2;
+
+  position: absolute;
+}
