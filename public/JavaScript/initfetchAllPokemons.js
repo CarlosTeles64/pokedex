@@ -1,9 +1,5 @@
 const pokemonCards = document.querySelector(".pokemon-cards");
 
-function displayPopUp(id) {
-  console.log(id)
-}
-
 function createPokemonCardTemplate(pokemons) {
 
     const typeColors = {

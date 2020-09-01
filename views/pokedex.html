@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <link rel="stylesheet" href="../public/css/pokedex.css" />
+    <link rel="stylesheet" href="../public/css/pokemon-details-modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+
+    <title>Pokemania</title>
+  </head>
+  <body id="page-home">
+    <div id="container">
+      <header>
+        <div class="logo">
+          <img src="../public/src/logo-svg.svg" alt="" />
+          <h1>PokeMania</h1>
+        </div>
+        <span class="hamburguer-menu icon"><i class="fas fa-bars"></i></span>
+      </header>
+      <main>
+        <h2>Pokedex</h2>
+        <div class="pokemon-cards"></div>
+      </main>
+    </div>
+    <div class="pokemon-details-modal">
+      <header>
+        <div id="container">
+          <span class="left-arrow icon"><i class="fas fa-arrow-left"></i></span>
+          <span class="heart icon"><i class="far fa-heart"></i></span>
+        </div>
+      </header>
+      <main class="information-container">
+        <section class="upper-section">
+          <div id="container">
+            <div class="basic-informations">
+              <span class="pokemon-id">#001</span>
+              <h2>Bulbassuar</h2>
+              <small class="type">Grass</small>
+              <small class="type">Poison</small>
+            </div>
+            <div class="pokemon-img-container">
+              <img
+                src="https://pokeres.bastionbot.org/images/pokemon/1.png"
+                alt="bulbassaur"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="bottom-section">
+          <ul class="tab-navigation-bar">
+            <li class="active">About</li>
+            <li>Base States</li>
+            <li>Evolution</li>
+            <li>Moves</li>
+          </ul>
+          <main>
+            <div id="container">
+              <section class="about">
+                <li><p>Species</p>Seed</li>
+                <li><p>Height</p>2'3.6"(0.70cm)</li>
+                <li><p>Weight</p>15.2 lbs(6.9kg)</li>
+                <li><p>Abilities</p>Overgrow, Chlorophyl</li>
+              </section>
+              <section class="base-stats">
+                <li>
+                  <p>HP</p>
+                  45
+                  <div class="bar">
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Attack</p>
+                  45
+                  <div class="bar">
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Defense</p>
+                  45
+                  <div class="bar">
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Sp. Att</p>
+                  45
+                  <div class="bar">
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Sp. Def</p>
+                  45
+                  <div class="bar">
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Speed</p>
+                  45
+                  <div class="bar">
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Total</p>
+                  45
+                  <div class="bar">
+                    <div></div>
+                  </div>
+                </li>
+              </section>
+            </div>
+          </main>
+        </section>
+      </main>
+    </div>
+    <script src="../public/JavaScript/initfetchAllPokemons.js"></script>
+  </body>
+</html>
