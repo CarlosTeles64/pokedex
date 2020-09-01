@@ -1,0 +1,67 @@
+/* Only Page Home Styles */
+.search-bar {
+  display: flex;
+  
+  margin-bottom: 2rem;
+}
+.search-bar input {
+  flex: 1;
+  
+  border-radius: 0px 50px 50px 0px;
+}
+.search-bar input, .search-bar .search-icon {
+  background-color: var(--search-bar-color);
+  
+  font-size: 1rem;
+}
+.search-bar .search-icon { 
+  padding: 1rem;
+  
+  border-radius: 50px 0 0 50px;
+}
+.navigation-list {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.navigation-list a {
+  padding: 1.5rem 1rem;
+  
+  background: var(--search-bar-color);
+  border-radius: 20px;
+
+  color: white;
+  font-weight: bold;
+  
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow: 0px 10px 10px -5px #4FC1A6;
+}
+.navigation-list a::before, .navigation-list a::after {
+  content: '';
+
+  position: absolute;
+  
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  opacity: .2;
+
+}
+.navigation-list a::before {
+  top: -38px;
+  left: -38px;
+  
+  background: #ffffff;
+}
+.navigation-list a::after {
+  top: -2px;
+  right: -12px;
+
+  background: url(../src/pokeball-bg.svg);
+}
